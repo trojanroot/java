@@ -87,8 +87,8 @@ public class PaymentProcessingSystem {
  
         Payment wallet = new WalletPayment("wallet_001", 100.0);
         Checkout checkout2 = new Checkout(wallet);
-        checkout2.processPayment(50.0);
-        checkout2.processPayment(80.0); // should fail - insufficient balance
+        checkout2.processPayment(60.0);
+        checkout2.processPayment(90.0); // should fail - insufficient balance
     }
 }
  
